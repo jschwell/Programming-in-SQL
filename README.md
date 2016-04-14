@@ -6,61 +6,59 @@ Programs created for the class Programming in SQL
 * Introduction to SQL Server 2012 DBMS
 * Summary of SQL Server 2012 tools
 
-**Scripts:**
-* SqlCh2ex8
- * SELECT statement that returns the column ProductName
-* SqlCh2ex10
- * SELECT statement that returns the count of the number of products
-
 ## Lesson 2: Retrieving Data from a Single Tables and Multiple Tables
 **Objectives:**
 * Code and run SELECT statements that use any of the language elements presented in this chapter
 * Use the explicit syntax to code an inner join that returns data from a single table or multiple tables
 * Code a union that combines data from a single table or multiple tables.
 
-**Scripts:**
-* SqlCh3ex1
- * SELECT statement that returns four columns from the Products table
-* SqlCh3ex2
- * SELECT statement that returns one column from the Customers table that joins the LastName and FirstName columns
- * Returns only contacts whose last name begins with letters from M to Z
-* SqlCh3ex3
-  * SELECT statement that returns only the rows with a list price that's greater than 500 and less than 2000
-* SqlCh3ex4
- * SELECT statement that returns three columns from the Products table and two calculated columns
-* SqlCh3ex5
- * SELECT statement that returns four columns from the OrderItems table and three calculated columns
-* SqlCh3ex6
- * SELECT statement that returns three columns from the Orders table where the ShipDate column contains a null value
-* SqlCh3ex7
- * SELECT statement that creates four columns without a FROM clause
-* SqlCh4ex1
- *  SELECT statement that joins the Categories table to the Products table and returns three columns
-* SqlCh4ex2
- *  SELECT statement that joins the Customers table to the Addresses table and returns six columns
- *  Returns one row for each address for the customer with an email address of allan.sherwood@yahoo.com
-* SqlCh4ex3
- *  SELECT statement that joins the Customers table to the Addresses table and returns six columns
- *  Returns one row for each customer, but only returns addresses that are the shipping address for a customer
-* SqlCh4ex4
- *  SELECT statement that joins the Customers, Orders, OrderItems, and Products tables
-* SqlCh4ex5
- *  SELECT statement that returns the ProductName and ListPrice columns from the Products table
- *  Returns one row for each product that has the same list price as another product
-* SqlCh4ex6
- *  SELECT statement that returns two columns from the Categories and Products tables
- *  Returns one row for each category that has never been used
-* SqlCh4ex7
- * Uses the UNION operator to generate a result set consisting of three columns from the Orders table
- * If the order has a value in the ShipDate column, the ShipStatus column should contain a value of SHIPPED. Otherwise, it should contain a value of NOT SHIPPED
- 
 ## Lesson 3: Summary Queries and Sub-Queries
 **Objectives:**
 * Code SELECT statements that require any of the language elements presented in this chapter
 * Code SELECT statements that use common table expressions (CTEs) to define the subqueries
 
-**Scripts:**
-* SqlCh2ex8
- * SELECT statement that returns the column ProductName
-* SqlCh2ex10
- * SELECT statement that returns the count of the number of products
+## Lesson 4: Data Maintenance / Data Types and Functions
+**Objectives:**
+* Given the specifications for an action query, code the INSERT, UPDATE, or DELETE statement for doing the action
+* Use the MERGE statement to merge rows from a source table into a target table
+* Create a copy of a table by using the INTO clause of the SELECT statement
+* Code queries that work with data types as well as queries that require any of the scalar functions presented in this chapter
+
+## Lesson 5: Designing / Creating Database
+**Objectives:**
+* Given the specifications for a database modeled on a real-world system, design the database. Identify tables, columns, keys, relationships, and indexes for the new database
+* Given a diagram for an unnormalized database, normalize the structure to the third normal form
+* Given a complete database design, write the SQL DDL statements to create the database, including all tables, relationships, constraints, and indexes
+
+## Lesson 6: Working with Views and Scripts
+**Objectives:**
+* Given a SELECT statement, create a new view based on the statement
+* Given a SELECT statement, use the View Designer to create a new view based on the statement
+* Use the View Designer to change the design of an existing view
+* Given a Transact-SQL script written as a single batch, insert GO commands to divide the script into appropriate batches
+* Given the specification for a database problem, write a script that solves it
+* Use the SQLCMD utility to execute a query or a script
+
+## Lesson 7: Stored Procedures and Triggers
+**Objectives:**
+* Given the specifications for a database problem, write a stored procedure that solves it
+* Given a formula or expression, write a scalar-valued user-defined function based on the formula or expression
+* Given a SELECT statement with a WHERE clause, write a table-valued user-defined function that replaces it
+* Given the specifications for a database problem that could be caused by an action query, write a trigger that prevents the problem
+* Given the specifications for a database problem that could be caused by a DDL statement, write a trigger that prevents the problem
+
+## Lesson 8: Using Cursors
+**Objectives:**
+* Given the specifications for a database problem that can be solved by using Transact-SQL cursors, write a script that solves it
+
+## Lesson 9: Manage Transaction Locking
+**Objectives:**
+* Given a set of statements to be combined into a transaction, insert the Transact-SQL statements to explicitly begin, commit, and roll back the transaction
+
+## Lesson 10: How to manage database security
+**Objectives:**
+* Given the specifications for a new user’s security permissions, write the Transact-SQL statements that create the new user and grant the security permissions
+* Given the specifications for a new user’s security permissions, use the Management Studio to create the new user and grant the security permissions
+* Given the specifications for a set of security permissions, write the Transact-SQL statements to create a new role and assign users or groups to it
+* Given the specifications for a set of security permissions, use the Management Studio to create a new role and assign users or groups to it
+* Use system stored procedures or the Management Studio to add users to the fixed server roles or to add users and roles to the fixed database roles.
